@@ -1,0 +1,2 @@
+include ':autonomousrecharge'
+include ':app'

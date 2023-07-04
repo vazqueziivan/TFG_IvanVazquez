@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/two_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/production_mode_fragment"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/ic_btn_back"
+        android:gravity="center_horizontal"
+        android:includeFontPadding="false"
+        android:paddingStart="0dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gotomaxspeed"
+        app:layout_constraintVertical_bias="0.05">
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="690dp"
+        android:layout_height="380dp"
+        android:layout_gravity="center"
+
+        android:fastScrollAlwaysVisible="true"
+        android:fastScrollEnabled="false"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gotomaxspeed"
+        app:layout_constraintVertical_bias="0.05">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"></LinearLayout>
+    </ScrollView>
+
+    </LinearLayout>
+
+    <Switch
+        android:id="@+id/gotomaxspeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="20dp"
+        android:checked="false"
+        android:switchMinWidth="70dp"
+        android:text="@string/gotomaxspeed"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/two_text" />
+
+    <Switch
+        android:id="@+id/gotostraight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:checked="false"
+        android:switchMinWidth="70dp"
+        android:text="@string/gotostraight"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/gotomaxspeed"
+        app:layout_constraintEnd_toStartOf="@+id/goto_route_loop"
+        app:layout_constraintStart_toEndOf="@+id/gotomaxspeed"
+        app:layout_constraintTop_toTopOf="@+id/gotomaxspeed"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Switch
+        android:id="@+id/goto_route_loop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:switchMinWidth="70dp"
+        android:text="@string/goto_list_loop"
+        android:layout_marginEnd="70dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/gotomaxspeed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gotomaxspeed"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/goto_random"
+        android:layout_width="235dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="50dp"
+        android:background="@drawable/ic_btn_goto"
+        android:enabled="true"
+        android:paddingStart="40dp"
+        android:paddingEnd="15dp"
+        android:text="@string/goto_random"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearlayout" />
+
+    <Button
+        android:id="@+id/stop_goto_random"
+        android:layout_width="230dp"
+        android:layout_height="42dp"
+        android:background="@drawable/ic_btn_goto"
+        android:enabled="false"
+        android:paddingStart="40dp"
+        android:paddingEnd="15dp"
+        android:text="@string/stop_random"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/goto_random"
+        app:layout_constraintEnd_toStartOf="@+id/goto_route"
+        app:layout_constraintStart_toEndOf="@+id/goto_random"
+        app:layout_constraintTop_toTopOf="@+id/goto_random" />
+
+    <Button
+        android:id="@+id/goto_route"
+        android:layout_width="230dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/ic_btn_goto"
+        android:paddingStart="40dp"
+        android:paddingEnd="15dp"
+        android:text="Goto ruta"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearlayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

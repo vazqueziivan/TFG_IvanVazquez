@@ -1,0 +1,123 @@
+<resources>
+    <!--app name-->
+    <string name="app_name">PepperAllocator</string>
+
+    <!-- fragment_loading -->
+    <string name="loading">Cargando</string>
+
+    <!-- fragment_localize_and_map -->
+    <string name="production_mode_button">PRUEBAS</string>
+    <string name="setup_mode_button">CONFIGURACIÓN</string>
+
+    <!-- fragment_setup -->
+    <string name="setup_mode_fragment">Escanear</string>
+    <string name="localize_and_map">LOCALIZE &amp; MAP</string>
+    <string name="localize">LOCALIZA MI ROBOT</string>
+
+    <!-- fragment_production -->
+    <string name="production_mode_fragment">Exploremos el mundo</string>
+    <string name="gotoframe">Go to Frame</string>
+
+
+    <!-- fragment_map_localize_and_move -->
+    <string name="localize_and_map_fragment">Escanear habitación</string>
+    <string name="warning">Mantente alejado de mí durante el escaneo inicial, por favor</string>
+    <string name="push">Muéveme alrededor de la habitación para escanearla</string>
+    <string name="trap">Primero, abre mi solapa de carga</string>
+    <string name="mapping">Empújame por el camino que quieras que memorice en ambas direcciones</string>
+    <string name="save_stop_button">STOP &amp; SAVE</string>
+
+    <!-- fragment_save_locations -->
+    <string name="save_location_fragment">Memorizar puntos de interés</string>
+    <string name="backup_locations">Guardar</string>
+
+    <!-- fragment_save_frame -->
+    <string name="map_position">Abre mi solapa de carga y después desplázame hasta la posición que quieras que memorice</string>
+    <string name="cancel_button">Cancelar</string>
+    <string name="yes">Aceptar</string>
+    <string name="popup_save_attached_frame">¿Quieres guardar esta posición?</string>
+    <string name="location_name">Nombre</string>
+
+    <!-- fragment_localize_robot -->
+    <string name="localize_robot_Fragment">¿Dónde estoy?</string>
+    <string name="warning_localization">Mantente alejado durante la localización</string>
+    <string name="stop_button">Stop</string>
+    <string name="popup_no_location">Lo siento, no hay posiciones en la memoria</string>
+    <string name="popup_no_map">Lo siento, no hay ningún mapa en la memoria.\nVe a Setup Mode y realiza un \"LOCALIZE &amp; MAP\" </string>
+    <string name="add_locations">Añadir</string>
+    <string name="you_are_home">Estás en casa</string>
+    <string name="go_map_frame">Primero, llévame a casa y después cierra mi solapa de carga</string>
+    <string name="localizing_at_home">Debo localizarme</string>
+    <string name="retry_localize">Reintentar</string>
+    <string name="save_location">Guardar</string>
+    <string name="save_locations">POSICIONES</string>
+    <string name="backup_locations_confirmation">¿Quieres salir sin guardar?</string>
+    <string name="retry">Reintentar</string>
+    <string name="save">Guardar</string>
+    <string name="saved">Guardado</string>
+    <string name="saving">Guardando…</string>
+    <string name="location_name_text">location name X here</string>
+    <string name="delete">Eliminar</string>
+    <string name="stay_away_mapping">Mantente alejado de mí durante el mapeo inicial, por favor</string>
+    <string name="stay_away_localizing">Mantente alejado de mí mientas localizo mi ubicación, por favor</string>
+    <string name="location_reached">Ubicación alcanzada</string>
+    <string name="goto_random">GoTo aleatorio</string>
+    <string name="gotomaxspeed">Máxima velocidad\ \ \ \ </string>
+    <string name="gotostraight">Recto\ \ \ \ </string>
+    <string name="stop_random">Stop aleatorio</string>
+    <string name="multiplepointsinarow">Añadir varias posiciones\ \ \ \ \ </string>
+    <string name="goto_charge">GoTo Cargador</string>
+    <string name="existing_or_new_map">¿Extender el mapa existente o crear uno nuevo?</string>
+    <string name="extend_map">"  Extender Mapa"</string>
+    <string name="create_map">Crear Mapa</string>
+    <string name="warning18a">Warning : Function not available on 1.8a robot</string>
+    <string name="goto_undock">Undock</string>
+    <string name="goto_list_loop">Ruta en bucle</string>
+    <string name="goto_frame">GoTo</string>
+    <string name="map_frame">Casa</string>
+    <string name="need_to_go_to_charge">¡Necesito cargarme, pero no sé dónde estoy!</string>
+    <string name="skip">Skip</string>
+    <string name="charging_station_frame">Abre mi solapa de carga y después desplázame hasta mi estación de carga</string>
+    <string name="stopping_mapping">Parando Localize And Map, por favor mantente alejado.</string>
+    <string name="goto_text">Let\'s go!</string>
+    <string name="button_full_turn">Vuelta 360º</string>
+    <string name="button_chat">CHAT</string>
+
+    <!-- fragment_pantalla_inicio -->
+    <string name="button_comenzar">¡COMENZAR!</string>
+    <string name="button_ajustes">AJUSTES</string>
+    <string name="text_pepper_allocator">PEPPER ALLOCATOR</string>
+
+    <!-- fragment_buscar_personas -->
+    <string name="text_buscar">Buscando...</string>
+    <string name="button_cancelar">CANCELAR</string>
+
+    <!-- fragment_humano_encontrado -->
+    <string name="text_encontrado">Humano encontrado</string>
+
+    <!-- fragment_saludar_persona -->
+    <string name="text_saludar">¡Hola, bienvenido!</string>
+
+    <!-- fragment_seguir_persona -->
+    <string name="text_seguir">Siguiendo</string>
+
+    <!-- fragment_chat -->
+    <string name="text_chat">Chat</string>
+
+    <!-- fragment_pastilla -->
+    <string name="text_pasti">¿Te has tomado la pastilla?</string>
+
+    <!-- fragment_chat -->
+    <string name="text_duch">¿Te has duchado?</string>
+
+    <!-- fragment_chat -->
+    <string name="text_com">¿Has comido?</string>
+
+    <!-- fragment_prueba -->
+    <string name="text_info">Información</string>
+    <string name="text_aceptar">ACEPTAR</string>
+    <string name="text_pastilla">¿A qué hora te has tomado la pastilla?</string>
+    <string name="text_comida">¿A qué hora ha sido tu última comida?</string>
+    <string name="text_ducha">¿A qué te has duchado?</string>
+
+</resources>
